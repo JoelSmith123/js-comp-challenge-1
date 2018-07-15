@@ -83,35 +83,95 @@ h2 {
 
 @media only screen and (max-width: 1024px) {
   .wrapper {
-    grid-template-columns: repeat(3, 30vw);
-    grid-template-rows: repeat(6, 30vw);
     align-content: stretch;
+    grid-template-columns: repeat(3, 30vw);
+    grid-template-rows: repeat(5, 30vw);
+    height: auto;
     margin: 4vh auto;
   }
 
+  h1 {
+    font-size: 5vw;
+  }
+
+  p {
+    font-size: 2.5vw; 
+  }
+
+  h2 {
+    font-size: 2vh;
+  }
+
+
   .box3 {
     grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 4;
-    grid-row-end: 7;
-    margin-bottom: 4vh;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 5;
   }
+
+  .box5 {
+    background-color: #fc4445;  
+  }
+
+  .box6 {
+    background-color: #3feee6;
+  }
+
+  .box9 {
+    background-color: #97caef;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
   .wrapper {
-    grid-template-columns: repeat(2, 20vw);
-    grid-template-rows: repeat(13, 20vw);
-    align-content: stretch;
-    margin: 4vh auto;
+    grid-template-columns: repeat(2, 45vw);
+    grid-template-rows: repeat(8, 45vw);
+    height: auto;
+  }
+
+  h1 {
+    font-size: 7vw;
+  }
+
+  p {
+    font-size: 3.5vw; 
+  }
+
+  h2 {
+    font-size: 3vh;
   }
 
   .box3 {
     grid-column-start: 1;
     grid-column-end: 3;
-    grid-row-start: 11;
-    grid-row-end: 14;
-    margin-bottom: 4vh;
+    grid-row-start: 3;
+    grid-row-end: 6;
+  }
+
+  .box5 {
+    background-color: #97caef
+  }
+
+  .box6 {
+    background-color: #fc4445;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 8;
+    grid-row-end: 9;
+  }
+
+  .box7 {
+    background-color: #fc4445;
+  }
+
+  .box8 {
+    background-color: #3feee6;
+  }
+
+  .box9 {
+    background-color: #97caef;
   }
 }
 
