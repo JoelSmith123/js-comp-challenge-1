@@ -43,17 +43,31 @@ h2 {
   font-weight: 600;
 }
 
+.icon {
+  height: 2.5vw;
+  width: auto;
+}
+
+.full-size {
+  position: relative;
+  max-width: 100%;
+  transform: translateY(-50%);
+  top: 50%;
+}
+
 .box2 {
   background-color: #3feee6;
 }
 
 .box3 {
+  background-color: #262626;
   border-style: solid;
   border-color: #fc4445;
   grid-column-start: 4;
   grid-column-end: 6;
   grid-row-start: 1;
   grid-row-end: 4;
+  padding: 0 0.5em;
 }
 
 .box4 {
@@ -102,6 +116,10 @@ h2 {
     font-size: 2vh;
   }
 
+  .icon {
+    height: 3.5vw;
+    width: auto;
+  }
 
   .box3 {
     grid-column-start: 1;
@@ -141,6 +159,11 @@ h2 {
 
   h2 {
     font-size: 3vh;
+  }
+
+  .icon {
+    height: 5vw;
+    width: auto;
   }
 
   .box3 {
