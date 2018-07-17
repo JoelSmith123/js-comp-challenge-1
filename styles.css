@@ -17,13 +17,14 @@ div {
   padding: 1em; 
 }
 
-div:nth-child(2n) {
-}
-
 .box1 {
+  display: grid;
+  background-color: #fc4445;
   grid-column-start: 1;
   grid-column-end: 3;
-  background-color: #fc4445;
+  grid-template-columns: repeat(4, 2fr);
+  grid-template-rows: repeat(2, 1fr);
+  padding: 0;
 }
 
 h1 {
@@ -37,6 +38,14 @@ p {
   font-size: 1.3vw;
 }
 
+.top-line {
+  margin-bottom: 0;
+}
+
+.bottom-line {
+  margin-top: 0;
+}
+
 h2 {
   font-family: 'Oswald', sans-serif;
   font-size: 1.6vw;
@@ -48,11 +57,18 @@ h2 {
   width: auto;
 }
 
-.full-size {
-  position: relative;
-  max-width: 100%;
-  transform: translateY(-50%);
-  top: 50%;
+.fa-angle-left {
+  display: block;
+  font-size: 4vw; 
+  margin-top: 70%;
+  float: left;
+}
+
+.fa-angle-right { 
+  display: block;
+  font-size: 4vw;
+  margin-top: 70%;
+  float: right;
 }
 
 .box2 {
@@ -60,7 +76,10 @@ h2 {
 }
 
 .box3 {
-  background-color: #262626;
+  background-image: url("images/Joel Smith - F.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   border-style: solid;
   border-color: #fc4445;
   grid-column-start: 4;
@@ -95,6 +114,40 @@ h2 {
   background-color: #3feee6;
 }
 
+/*this is the nested grid*/
+.box10 {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.box11 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.box11 button {
+  margin-top: 1vw;
+}
+
+.box12 {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+button {
+  background-color: #fc4445;
+  border-style: solid;
+  border-color: #000;
+  font-size: 1.5vw;
+  outline: none;
+}
+
 @media only screen and (max-width: 1024px) {
   .wrapper {
     align-content: stretch;
@@ -106,6 +159,8 @@ h2 {
 
   h1 {
     font-size: 5vw;
+    margin-bottom: 0;
+    margin-top: 2vw;
   }
 
   p {
@@ -140,6 +195,10 @@ h2 {
     background-color: #97caef;
   }
 
+  button {
+    font-size: 2.5vw;
+  }
+
 }
 
 @media only screen and (max-width: 500px) {
@@ -164,6 +223,14 @@ h2 {
   .icon {
     height: 5vw;
     width: auto;
+  }
+
+  .fa-angle-left {
+    margin-top: 75%;
+  }
+
+  .fa-angle-right {
+    margin-top: 75%;
   }
 
   .box3 {
@@ -197,8 +264,3 @@ h2 {
     background-color: #97caef;
   }
 }
-
-
-
-
-
